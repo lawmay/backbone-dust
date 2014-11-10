@@ -1,0 +1,3 @@
+<a class="band-item" href="#/artist/{id}">
+  <span class="band-name">{name}</span>
+</a>

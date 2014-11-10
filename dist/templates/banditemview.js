@@ -1,0 +1,1 @@
+(function(){dust.register("banditemview.dust",body_0);function body_0(chk,ctx){return chk.w("<a class=\"band-item\" href=\"#/artist/").f(ctx.get(["id"], false),ctx,"h").w("\"><span class=\"band-name\">").f(ctx.get(["name"], false),ctx,"h").w("</span></a>");}body_0.__dustBody=!0;return body_0;})();

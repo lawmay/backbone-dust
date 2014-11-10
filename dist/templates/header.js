@@ -1,0 +1,1 @@
+(function(){dust.register("header.dust",body_0);function body_0(chk,ctx){return chk.w("<div class=\"header-container\"><div class=\"header-title\">BAND DETAILS</div><div class=\"header-prompt\">CHOOSE A BAND</div></div>");}body_0.__dustBody=!0;return body_0;})();

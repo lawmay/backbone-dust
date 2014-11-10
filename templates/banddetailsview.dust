@@ -1,0 +1,13 @@
+<div class="band-details-year">
+  <div class="band-details-year-title">YEAR FORMED</div>
+  <div class="band-details-year-value">{year_formed}</div>
+</div>
+<div class="clear"></div>
+<div class="band-details-members">
+  <div class="band-details-members-title">MEMBERS</div>
+  <ul>
+    {#members}
+      <li>{name}</li>{~n}
+    {/members}
+  </ul>
+</div>
