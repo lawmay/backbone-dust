@@ -1,2 +1,2 @@
 # Backbone Coding Exercise
-A frontend coding exercise utilizing Backbone along Dust templating.
+A frontend coding exercise utilizing Backbone along with Dust templating.
