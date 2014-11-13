@@ -5,12 +5,13 @@ var uglify = require('gulp-uglify');
 var streamify = require('gulp-streamify');
 var dust = require('gulp-dust');
 var concat = require('gulp-concat');
+var minifyCSS = require('gulp-minify-css');
 
 var paths = {
   src: ['src/**/*.js']
   , templates: ['templates/*.dust']
   , compiledTemplates: ['dist/templates/*.js']
-  , styles: ['styles/styles.css']
+  , styles: ['styles/*.css']
 };
 
 gulp.task('compileTemplates', function () {
@@ -29,6 +30,13 @@ gulp.task('concatTemplates', function () {
 
 gulp.task('templates', ['compileTemplates', 'concatTemplates']);
 
+gulp.task('minify-css', function() {
+  return gulp.src(paths.styles)
+    .pipe(minifyCSS({keepBreaks:true}))
+    .pipe(gulp.dest('dist'))
+  ;
+});
+
 gulp.task('browserify', function() {
   return browserify('./src/main.js')
     .bundle()
@@ -44,4 +52,4 @@ gulp.task('watch', function() {
 });
 
 
-gulp.task('default', ['templates', 'browserify', 'watch']);
+gulp.task('default', ['templates', 'browserify', 'minify-css', 'watch']);

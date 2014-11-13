@@ -1,0 +1,25 @@
+body{background-color:#fff;margin:0;padding:0;font-family:Ubuntu,sans-serif}
+.main-container{width:700px;margin:auto}
+.app-container{height:300px;margin:10px auto 0}
+.header-container{margin:10px auto 0;padding-bottom:0;border-bottom:1px solid #ccc}
+.header-title{font-family:'Istok Web',sans-serif;font-size:48px;display:inline-block;font-weight:900}
+.header-prompt{font-size:22px;float:right;display:inline-block;color:#888;font-weight:100;margin-top:18px}
+.band-list{height:100%;width:240px;display:inline-block}
+ul{list-style-type:none;padding:0;margin:0}
+li{color:#000}
+li:last-child{border:none}
+li a{text-decoration:none;text-align:right;vertical-align:middle;display:block;color:#000;padding:10px 4px}
+li a:hover{background-color:#eee}
+li a:active,li a:visited{text-decoration:none}
+.band-name{font-size:18px;font-weight:800;letter-spacing:-1px}
+.band-details-container{display:inline-block;float:right;width:400px;margin:12px 10px 0 0}
+.band-details-name{font-size:40px;font-weight:100}
+.band-details-border{margin:10px auto;border-bottom:1px solid #ccc}
+.band-details-year-title{float:left;font-size:26px;letter-spacing:-1px;font-weight:100}
+.band-details-year-value{float:right;font-size:40px;color:#333}
+.band-details-members{margin-top:24px}
+.band-details-members-title{float:left;font-size:26px;letter-spacing:-1px;font-weight:100}
+.band-details-container ul{float:right}
+.band-details-container li{font-size:18px;letter-spacing:1px;padding:10px 0;text-decoration:none;text-align:right;vertical-align:middle}
+.band-details-intro{font-size:30px;color:#888}
+.clear{clear:both}
